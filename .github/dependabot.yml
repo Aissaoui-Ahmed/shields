@@ -1,0 +1,52 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: y18n
+    versions:
+    - 4.0.1
+  - dependency-name: "@types/node"
+    versions:
+    - 14.14.21
+    - 14.14.25
+    - 14.14.28
+    - 14.14.31
+    - 14.14.34
+  - dependency-name: danger
+    versions:
+    - 10.6.0
+    - 10.6.1
+    - 10.6.3
+  - dependency-name: nock
+    versions:
+    - 13.0.5
+  - dependency-name: "@types/styled-components"
+    versions:
+    - 5.1.7
+  - dependency-name: got
+    versions:
+    - 11.8.1
+  - dependency-name: "@types/react-helmet"
+    versions:
+    - 6.1.0
+  - dependency-name: elliptic
+    versions:
+    - 6.5.3
+- package-ecosystem: npm
+  directory: "/gh-badges"
+  schedule:
+    interval: weekly
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: svgo
+    versions:
+    - 2.0.3
+    - 2.1.0
+    - 2.2.1
+    - 2.2.2
